@@ -7,6 +7,9 @@ int main()
    float fnum1,fnum2,fnum3;
    double dnum1,dnum2,dnum3;
    double sum;
+
+   double snum1,snum2,snum3;
+   int process;  
    
 
 
@@ -14,6 +17,11 @@ int main()
    printf("for int 1 \n for float 2 \n for double 3 \n");
    printf("Enter Number :");
    scanf("%d",&option);
+
+   printf("plase select what process do you wnat with this number");
+   printf(" for sum enter => 1 \n  for subtraction enter => 2 \n  for multiplication enter => 3 \n  for division enter => 4 \n for remainder after division enter => 5 \n plae enter your process :");
+   scanf("%d",&process);
+
 
    switch(option)
    {
@@ -68,4 +76,34 @@ int main()
 
 
     return 0;
+}
+
+void sums(snum1,snum2,snum3)
+{
+
+    return snum1+snum2+snum3;
+}
+
+void subtraction(snum1,snum2,snum3)
+{
+    return  snum1-snum2-snum3;
+}
+
+void multiplication(snum1,snum2,snum3)
+{
+    return snum1*snum2*snum3;
+}
+
+
+void division(snum1,snum2,snum3)
+{
+
+    return snum1/snum2/snum3;
+}
+
+
+void remainder_division(snum1,snum2,snum3)
+{
+ 
+    return snum1%snum2%snum3;
 }
