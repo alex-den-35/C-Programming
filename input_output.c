@@ -1,12 +1,18 @@
 #include <stdio.h>
 
+double sums(double snum1,double snum2,double snum3);
+double subtraction(double snum1,double snum2,double snum3);
+double multiplication(double snum1,double snum2,double snum3);
+double division(double snum1,double snum2,double snum3);
+int remainder_division(int snum1,int snum2,int snum3);
+
 
 int main()
 {
    int num1,num2,num3,option;
    float fnum1,fnum2,fnum3;
    double dnum1,dnum2,dnum3;
-   double sum;
+   double sum = 0;
 
    double snum1,snum2,snum3;
    int process;  
@@ -34,7 +40,35 @@ int main()
        printf("plase enter the third number :");
        scanf("%d",&num3);
 
-       sum = num1+num2+num3;
+       if(process == 1)
+       { 
+         sum = sums(num1,num2,num3);
+         
+       }
+
+        if(process == 2)
+       { 
+         sum = subtraction(num1,num2,num3);
+         
+       }
+
+        if(process == 3)
+       { 
+         sum = multiplication(num1,num2,num3);
+         
+       }
+
+        if(process == 4)
+       { 
+         sum = division(num1,num2,num3);
+         
+       }
+
+        if(process == 5)
+       { 
+         sum = remainder_division(num1,num2,num3);
+         
+       }
        printf("result : %lf",sum);
     break;
 
@@ -78,31 +112,31 @@ int main()
     return 0;
 }
 
-void sums(snum1,snum2,snum3)
+double sums(double snum1,double snum2,double snum3)
 {
 
     return snum1+snum2+snum3;
 }
 
-void subtraction(snum1,snum2,snum3)
+double subtraction(double snum1,double snum2,double snum3)
 {
     return  snum1-snum2-snum3;
 }
 
-void multiplication(snum1,snum2,snum3)
+double multiplication(double snum1,double snum2,double snum3)
 {
     return snum1*snum2*snum3;
 }
 
 
-void division(snum1,snum2,snum3)
+double division(double snum1,double snum2,double snum3)
 {
 
     return snum1/snum2/snum3;
 }
 
 
-void remainder_division(snum1,snum2,snum3)
+int remainder_division(int snum1,int snum2,int snum3)
 {
  
     return snum1%snum2%snum3;
