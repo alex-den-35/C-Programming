@@ -28,10 +28,13 @@ int LeapYear()
     {
       printf("%d is not leap year \n",year);
     }
+}
+
+int Signum()
+{
 
 
-
-
+  return 0;
 }
 
 int main()
@@ -42,7 +45,10 @@ int main()
   printf("\n\n\n\n\n\n\n");
 
 
-  LeapYear();
+     
+    //  LeapYear();
+
+
 
 
     return 0;
