@@ -19,14 +19,23 @@ int main()
     }
     else if(co1 < 0 && co2 > 0)
     {
+        printf("The coordinate point (%d,%d) lies in the Second quadrant.\n", co1, co2);   // Print a message indicating the quadrant.
+      
 
     }
-    else if(co1 > 0 && co2 < 0)
+    else if(co1 < 0 && co2 < 0)
     {
+        printf("The coordinate point (%d, %d) lies in the Third quadrant.\n", co1, co2);   // Print a message indicating the quadrant.
 
     }
-    else if ()
+    else if (co1 > 0 && co2 < 0)
     {
-        
+        printf("The coordinate point (%d,%d) lies in the Fourth quadrant.\n", co1, co2);   // Print a message indicating the quadrant.
+
+    }
+    else if (co1 == 0 && co2 == 0 )
+    {
+        printf("The coordinate point (%d,%d) lies at the origin.\n", co1, co2);   // Print a message indicating that it's at the origin.
+
     }
 }
